@@ -63,8 +63,8 @@ Projekt-Wstepny-GOLEM/
 Clone the repository and install the required dependencies:
 ```bash
 
-git clone https://github.com/misterekkk/Projekt-Wstepny-GOLEM.git
-cd Projekt-Wstepny-GOLEM
+git clone https://github.com/misterekkk/public-golem.git
+cd public-golem
 pip install -e .
 
 ```
