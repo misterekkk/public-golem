@@ -65,6 +65,15 @@ Clone the repository and install the required dependencies:
 
 git clone https://github.com/misterekkk/public-golem.git
 cd public-golem
+
+# Windows
+python -m venv venv
+.\venv\Scripts\activate
+
+# Linux/Mac
+python3 -m venv venv
+source venv/bin/activate
+
 pip install -e .
 
 ```
