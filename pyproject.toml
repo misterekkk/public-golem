@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "histree"
+version = "0.1.0"
+authors = [
+  { name="Kacper Piotrowski" },
+  { name="Igor Ptak" },
+  { name="Michał Chrostowski" },
+]
+description = "High-Performance Histogram-Based Ensemble Library using Numba"
+readme = "README.md"
+requires-python = ">=3.12, <3.15"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "numpy>=1.20.0",
+    "scikit-learn>=1.0.0",
+    "numba>=0.55.0",
+    "pandas>=1.0.0"
+]
+
+[project.urls]
+"Homepage" = ""
+"Bug Tracker" = ""
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["histree*"]
+exclude = ["tests*", "benchmarks*", "notebooks*"]
+namespaces = false
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "--disable-warnings -v"
+testpaths = [
+    "tests",
+]
